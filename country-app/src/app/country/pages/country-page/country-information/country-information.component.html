@@ -1,0 +1,30 @@
+<section class="mx-10">
+  <h3 class="text-3xl"></h3>
+  <h3 class="text-xl font-thin"></h3>
+</section>
+
+<div class="stats shadow w-full">
+  <div class="stat place-items-center">
+    <div class="stat-title">Población</div>
+    <div class="stat-value">{{ countryName().population | number }}</div>
+    <div class="stat-desc">Desde {{ currentYear }}</div>
+  </div>
+
+  <div class="stat place-items-center">
+    <div class="stat-title">Nombre</div>
+    <div class="stat-value text-secondary">{{ countryName().name }}</div>
+    <div class="stat-desc text-secondary">{{ countryName().region }}</div>
+  </div>
+
+  <div class="stat place-items-center">
+    <div class="stat-title">Sub Region</div>
+    <div class="stat-value">{{ countryName().subregion }}</div>
+    <div class="stat-desc">{{ countryName().region }}</div>
+  </div>
+
+  <div class="stat place-items-center">
+    <div class="stat-title">Bandera</div>
+    <div class="stat-value text-8xl">{{ countryName().flag }}</div>
+    <div class="stat-desc">{{ countryName().region }}</div>
+  </div>
+</div>
